@@ -3,7 +3,7 @@ import { View, Text, SafeAreaView } from 'react-native'
 
 
 const App = () => {
-    return <Redirect href="/home" />
+    return <Redirect href="/(stack)/home" />
     // return (
     //     <SafeAreaView>
     //         <View className='mt-6 mx-5'>
