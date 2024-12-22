@@ -1,3 +1,4 @@
+import CustomDrawer from '@/components/shared/CustomDrawer';
 import { View, Text } from 'react-native'
 import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
@@ -5,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 const DrawerLayout = () => {
     return (
         <Drawer
+            drawerContent={CustomDrawer}
             screenOptions={{
                 overlayColor: 'rgba(0,0,0,0.4)',
                 drawerActiveTintColor: 'indigo',
