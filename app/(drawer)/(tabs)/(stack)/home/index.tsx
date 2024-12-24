@@ -20,7 +20,7 @@ const HomeScreen = () => {
                     color='primary'
                     onPress={() => router.push('/products')}
                 >
-                    Productos
+                    Noticias
                 </CustomButton>
 
                 <CustomButton
@@ -28,7 +28,7 @@ const HomeScreen = () => {
                     className="mb-2"
                     color="secondary"
                 >
-                    Profile
+                    Saldo
                 </CustomButton>
 
                 <CustomButton
@@ -36,11 +36,11 @@ const HomeScreen = () => {
                     className="mb-2"
                     color="tertiary"
                 >
-                    Ajustes
+                    Multas
                 </CustomButton>
 
                 <Link href='/products' asChild>
-                    <CustomButton variant='text-only' className="mb-10" color='primary'>Productos </CustomButton>
+                    <CustomButton variant='text-only' className="mb-10" color='primary'>Ajustes </CustomButton>
                 </Link>
                 <CustomButton
                     onPress={onToggleDrawer}

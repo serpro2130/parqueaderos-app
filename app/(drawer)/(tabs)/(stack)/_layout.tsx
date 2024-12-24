@@ -43,19 +43,19 @@ const StackLayout = () => {
             <Stack.Screen
                 name='products/index'
                 options={{
-                    title: 'Productos',
+                    title: 'Noticias',
                 }}
             />
             <Stack.Screen
                 name='profile/index'
                 options={{
-                    title: 'Perfil',
+                    title: 'Saldo',
                 }}
             />
             <Stack.Screen
                 name='settings/index'
                 options={{
-                    title: 'Ajustes',
+                    title: 'Multas',
                 }}
             />
         </Stack>

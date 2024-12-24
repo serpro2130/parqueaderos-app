@@ -32,7 +32,7 @@ const DrawerLayout = () => {
             <Drawer.Screen
                 name="user/index" // This is the name of the page and must match the url from root
                 options={{
-                    drawerLabel: 'User',
+                    drawerLabel: 'Usuario',
                     title: 'Usuario',
                     drawerIcon: ({ color, size }) => (
                         <Ionicons name='person-circle-outline' size={size} color={color} />
@@ -43,10 +43,10 @@ const DrawerLayout = () => {
             <Drawer.Screen
                 name="schedule/index" // This is the name of the page and must match the url from root
                 options={{
-                    drawerLabel: 'Horario',
+                    drawerLabel: 'Cerrar sesión',
                     title: 'Horario',
                     drawerIcon: ({ color, size }) => (
-                        <Ionicons name='calendar-outline' size={size} color={color} />
+                        <Ionicons name='log-out-outline' size={size} color={color} />
                     ),
                 }}
             />
