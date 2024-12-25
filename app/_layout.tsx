@@ -3,7 +3,6 @@ import { Slot, SplashScreen, Stack } from "expo-router";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
 import {
-
     QueryClient,
     QueryClientProvider,
 } from '@tanstack/react-query'
@@ -14,8 +13,6 @@ const queryClient = new QueryClient()
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
-
-
 
     const [fontsLoaded, error] = useFonts({
         'WorkSans-Black': require('../assets/fonts/WorkSans-Black.ttf'),
@@ -29,8 +26,6 @@ const RootLayout = () => {
     }, [fontsLoaded, error]);
 
     if (!fontsLoaded && !error) return null;
-
-
 
     return (
         <QueryClientProvider client={queryClient}>

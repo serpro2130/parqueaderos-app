@@ -1,10 +1,17 @@
+import { useMovies } from '@/presentation/hooks/useMovies'
 import { View, Text } from 'react-native'
-import React from 'react'
 
 const HomeScreen = () => {
+
+  const { nowPlayingQuery } = useMovies();
+
+
   return (
     <View>
       <Text>HomeScreen</Text>
+      <Text>
+        {JSON.stringify(nowPlayingQuery.data)}
+      </Text>
     </View>
   )
 }
