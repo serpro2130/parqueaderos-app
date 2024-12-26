@@ -1,5 +1,6 @@
 // import MovieCast from '@/presentation/components/movie/MovieCast';
 // import MovieDescription from '@/presentation/components/movie/MovieDescription';
+import MovieDescription from '@/presentation/components/movie/MovieDescription';
 import MovieHeader from '@/presentation/components/movie/MovieHeader';
 import { useMovie } from '@/presentation/hooks/useMovie';
 
@@ -20,15 +21,10 @@ const MovieScreen = () => {
         );
     }
 
-    //   return (
-    //     <ScrollView>
 
-    //       <MovieDescription movie={movieQuery.data} />
 
     //       {/* Movie Cast */}
     //       <MovieCast cast={castQuery.data ?? []} />
-    //     </ScrollView>
-    //   );
     return (
         <ScrollView>
             <MovieHeader
@@ -36,6 +32,7 @@ const MovieScreen = () => {
                 poster={movieQuery.data.poster}
                 title={movieQuery.data.title}
             />
+            <MovieDescription movie={movieQuery.data} />
         </ScrollView>
     )
 };
