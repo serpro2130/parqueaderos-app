@@ -11,6 +11,7 @@ import {
     QueryClientProvider,
 } from '@tanstack/react-query'
 import "./global.css";
+import { ThemeChangerProvider } from '@/presentation/context/ThemeChangerContext';
 
 const queryClient = new QueryClient()
 
@@ -33,13 +34,15 @@ const RootLayout = () => {
     if (!fontsLoaded && !error) return null;
 
     return (
-        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-            <QueryClientProvider client={queryClient}>
-                <GestureHandlerRootView style={{ backgroundColor: backgroundColor, flex: 1 }}>
+        // <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <GestureHandlerRootView style={{ backgroundColor: backgroundColor, flex: 1 }}>
+            <ThemeChangerProvider>
+                <QueryClientProvider client={queryClient}>
                     <Slot />
-                </GestureHandlerRootView>
-            </QueryClientProvider>
-        </ThemeProvider>
+                </QueryClientProvider>
+            </ThemeChangerProvider>
+        </GestureHandlerRootView>
+        // </ThemeProvider>
     );
     //return <Slot />;
     // return <Stack />
