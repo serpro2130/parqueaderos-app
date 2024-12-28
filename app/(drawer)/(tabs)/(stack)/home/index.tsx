@@ -39,7 +39,7 @@ const HomeScreen = () => {
                         className="mb-2"
                         color="tertiary"
                     >
-                        Multas
+                        Multitas
                     </CustomButton>
 
                     <Link href='/products' asChild>
@@ -50,6 +50,7 @@ const HomeScreen = () => {
                     >
                         Abrir menú
                     </CustomButton>
+
                     <View className='my-3' />
                     {animationMenuRoutes.map((route, index) => (
                         <MenuItem

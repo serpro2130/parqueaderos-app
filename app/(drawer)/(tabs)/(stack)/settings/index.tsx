@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 const SettinsScreen = () => {
     return (
         <View>
-            <Text>SettinsScreen</Text>
+            <Text>Multas</Text>
         </View>
     )
 }

@@ -71,6 +71,7 @@ const StackLayout = () => {
                             title: 'Multas',
                         }}
                     />
+
                     {
                         allRoutes.map(route => (
                             <Stack.Screen

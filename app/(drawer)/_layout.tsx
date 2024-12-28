@@ -58,6 +58,7 @@ const DrawerLayout = () => {
                             ),
                         }}
                     />
+
                 </Drawer>
             </ThemeChangerProvider>
         </GestureHandlerRootView>
